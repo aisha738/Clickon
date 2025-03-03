@@ -1,5 +1,6 @@
 # Streamlit UI
 import streamlit as st
+import numpy as np
 st.title('Iris Flower Prediction App')
 st.write('This app predicts the **Iris Flower** type!')
 st.write('Please input the followimg parameters:')
