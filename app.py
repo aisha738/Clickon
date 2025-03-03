@@ -1,6 +1,11 @@
 # Streamlit UI
 import streamlit as st
 import numpy as np
+import pickle
+
+with open("first_iris_model.pkl", 'rb') as file:
+    model= pickle.load(file)
+    
 st.title('Iris Flower Prediction App')
 st.write('This app predicts the **Iris Flower** type!')
 st.write('Please input the followimg parameters:')
