@@ -28,7 +28,7 @@ petal_width = st.number_input('Pepal Width', min_value=0.1, max_value=10.0, valu
 # Prediction
 
 if st.button('Predict'):
-    user_input = np.array([sepal_ID, sepal_width, petal_length, sepal_length, petal_width])
+    user_input = np.array([[sepal_width, petal_length, sepal_length, petal_width]])
     prediction = model.predict(user_input)
     species_mapping = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
     st.write(prediction)
