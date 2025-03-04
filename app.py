@@ -15,7 +15,6 @@ st.write('Please input the followimg parameters:')
 
 
 # Input form
-sepal_ID = st.number_input('Sepal ID', min_value=0.1, max_value=10.0, value=5.4, step=0.1)
 sepal_width = st.number_input('Sepal Width', min_value=0.1, max_value=10.0, value=3.4, step=0.1)
 petal_length = st.number_input('Petal Length', min_value=0.1, max_value=10.0, value=1.3, step=0.1)
 sepal_length = st.number_input('Sepal Length', min_value=0.1, max_value=10.0, value=0.2, step=0.1)
